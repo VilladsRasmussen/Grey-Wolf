@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./Poppins/Poppins-Thin.ttf");
+  }
+
 * {
     box-sizing: border-box;
     margin: auto;
+    font-family: Poppins;
+    font-weight: bold;
   }
 
 .header {
