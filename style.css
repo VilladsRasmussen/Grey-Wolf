@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: ;
+  }
+
+.header {
+    text-align: center;
+    background: #8CAE89;
+    font-size: 30px;
+    height: 75px;
+    width: 390px;
+  }
+
+.hero {
+    text-align: center;
+    background: white;
+    font-size: 30px;
+    height: 390px;
+    width: 390px;
+}
+
+.genbrug {
+    text-align: center;
+    background: #807070;
+    font-size: 30px;
+    height: 553px;
+    width: 390px;
+}
+
+.udvalgt {
+    text-align: center;
+    background: white;
+    font-size: 30px;
+    height: 476px;
+    width: 390px;
+}
+
+.matrialer {
+    text-align: center;
+    background: #807070;
+    font-size: 30px;
+    height: 390px;
+    width: 390px;
+}
+
+.certificeringer {
+    text-align: center;
+    background: #807070;
+    font-size: 30px;
+    height: 172px;
+    width: 390px;
+}
+
+.mærker {
+    text-align: center;
+    background: #EBE8DF;
+    font-size: 30px;
+    height: 262px;
+    width: 390px;
+}
+
+.mærker {
+    text-align: center;
+    background: #807070;
+    font-size: 30px;
+    height: 176px;
+    width: 390px;
+}
+
+.footer {
+    text-align: center;
+    background: #8CAE89;
+    font-size: 30px;
+    height: 305px;
+    width: 390px;
+}
