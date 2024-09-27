@@ -12,14 +12,11 @@
     font-weight: bold;
   }
   
-/* Baggroundsfarve for hjemmesiden */
+/* Baggrundsfarve & bredde for hjemmesiden */
 body {
     background-color: #807070;
+    width: 100%
 }  
-
-.section {
-    width: 100%;
-}
 
 /* Header design */
 .header {
@@ -29,9 +26,20 @@ body {
     height: 75px;
   }
 
-  /* Ikoner der deler fælles design */
-.header-icons {
-    width: 100%;
+  /* Ikoner der deler fælles design TIL VENSTRE */
+.header-icons-left {
+    width: 60px;
+    height: 60px;
+    border: 2px solid blue;
+    padding: 2px;
+}
+
+  /* Ikoner der deler fælles design TIL HØJRE */
+  .header-icons-right {
+    width: 60px;
+    height: 60px;
+    border: 2px solid blue;
+    padding: 2px;
 }
 
 .hero {
