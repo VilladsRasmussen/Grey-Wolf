@@ -1,15 +1,23 @@
+/* Indsat Poppins text */
 @font-face {
     font-family: "Poppins";
-    src: url("./Poppins/Poppins-Thin.ttf");
+    src: url("Poppins/Poppins-Thin.ttf");
   }
 
+/* Indsat Poppins text til siden */
 * {
     box-sizing: border-box;
     margin: auto;
     font-family: Poppins;
     font-weight: bold;
   }
+  
+/* Baggroundsfarve for hjemmesiden */
+body {
+    background-color: #807070;
+}  
 
+/* Indsat Poppins text */
 .header {
     text-align: center;
     background: #8CAE89;
