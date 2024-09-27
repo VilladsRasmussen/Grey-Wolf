@@ -17,21 +17,28 @@ body {
     background-color: #807070;
 }  
 
-/* Indsat Poppins text */
+.section {
+    width: 100%;
+}
+
+/* Header design */
 .header {
     text-align: center;
     background: #8CAE89;
     font-size: 30px;
     height: 75px;
-    width: 390px;
   }
+
+  /* Ikoner der deler fælles design */
+.header-icons {
+    width: 100%;
+}
 
 .hero {
     text-align: center;
     background: white;
     font-size: 30px;
     height: 390px;
-    width: 390px;
 }
 
 .genbrug {
@@ -39,7 +46,6 @@ body {
     background: #807070;
     font-size: 30px;
     height: 553px;
-    width: 390px;
 }
 
 .udvalgt {
@@ -47,7 +53,6 @@ body {
     background: white;
     font-size: 30px;
     height: 476px;
-    width: 390px;
 }
 
 .matrialer {
@@ -55,7 +60,6 @@ body {
     background: #807070;
     font-size: 30px;
     height: 390px;
-    width: 390px;
 }
 
 .certificeringer {
@@ -63,7 +67,6 @@ body {
     background: #807070;
     font-size: 30px;
     height: 172px;
-    width: 390px;
 }
 
 .mærker {
@@ -71,7 +74,6 @@ body {
     background: #EBE8DF;
     font-size: 30px;
     height: 262px;
-    width: 390px;
 }
 
 .undermenuer {
@@ -79,7 +81,6 @@ body {
     background: #EBE8DF;
     font-size: 30px;
     height: 176px;
-    width: 390px;
 }
 
 .footer {
@@ -87,5 +88,4 @@ body {
     background: #8CAE89;
     font-size: 305px;
     height: 305px;
-    width: 390px;
 }
