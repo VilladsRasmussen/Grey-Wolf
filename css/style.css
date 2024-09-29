@@ -11,6 +11,11 @@
     font-family: Poppins;
     font-weight: bold;
   }
+
+/* Buttons farver */
+.button-farve {
+    background-color: #E99F83 ;
+}
   
 /* Baggrundsfarve & bredde for hjemmesiden */
 body {
@@ -60,27 +65,47 @@ header {
 #hero-video {
     top: 50%;
     left: 50%;
-    width: 485px; /* Sæt til auto for responsivitet */
+    width: 100%;
     height: auto;
 }
 
 /* Genbrugs Sektion */
+
+.button1 {
+    width: 180px;
+    height: 69px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
 .genbrug {
     background: #807070;
     font-size: 30px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
+    display: flex;  
     height: 60vh;          
 }
 
+.shop-slogan-beregn {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Align items in the center horizontally */
+}
+
 .responsive-image {
+    display: block;
     max-width: 100%;       
     max-height: 100%;      
     object-fit: contain;    
   }
 
-/* Udvalgt sektion */
+
+
+
+
 .udvalgt {
     text-align: center;
     background: white;
