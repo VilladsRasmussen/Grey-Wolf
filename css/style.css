@@ -9,6 +9,7 @@
     margin: auto;
     font-family: Poppins;
     font-weight: bold;
+    color:white
   }
 
 /* Buttons generelle design-indstillninger */
@@ -107,9 +108,7 @@ header {
   }
 
 
-
-
-
+/* Udvalgt */
 .udvalgt {
     text-align: center;
     background: white;
@@ -117,12 +116,23 @@ header {
     height: 476px;
 }
 
+
+/* Matrialer */
 .matrialer {
-    text-align: center;
     background: #807070;
     font-size: 30px;
-    height: 390px;
+    display: flex;  
+    height: auto;
 }
+
+h2 {
+    margin-top: 20px;
+    color: white; !important
+    font-size: 40px;
+}
+
+
+
 
 .certificeringer {
     text-align: center;
