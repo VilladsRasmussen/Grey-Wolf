@@ -119,17 +119,40 @@ header {
 
 /* Matrialer */
 .matrialer {
-    background: #807070;
-    font-size: 30px;
-    display: flex;  
+    text-align: center;
+    background-color: #807070;
     height: auto;
+    color: White;
+}
+
+.smalltext p {
+    font-size: 12px; 
+}
+
+.link-text {
+    font-size: 30px;
 }
 
 h2 {
     margin-top: 20px;
-    color: white; !important
     font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
+
+.matrialer-content {
+    display: flex;          
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+.matriale-udvalg {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
 
 
 
