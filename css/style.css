@@ -80,6 +80,7 @@ header {
     object-fit: contain;    /* Maintain the aspect ratio and ensure the whole image is visible */
   }
 
+/* Udvalgt sektion */
 .udvalgt {
     text-align: center;
     background: white;
