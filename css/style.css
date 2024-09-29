@@ -90,7 +90,7 @@ header {
     background: #807070;
     font-size: 30px;
     display: flex;  
-    height: 60vh;          
+    height: auto;          
 }
 
 .shop-slogan-beregn {
