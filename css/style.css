@@ -69,15 +69,15 @@ header {
     background: #807070;
     font-size: 30px;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center;    /* Center the image vertically */
-    height: 60vh;          /* Full viewport height, adjust as needed */
+    justify-content: center; 
+    align-items: center;    
+    height: 60vh;          
 }
 
 .responsive-image {
-    max-width: 100%;       /* Ensure the image does not exceed the width of its container */
-    max-height: 100%;      /* Ensure the image does not exceed the height of its container */
-    object-fit: contain;    /* Maintain the aspect ratio and ensure the whole image is visible */
+    max-width: 100%;       
+    max-height: 100%;      
+    object-fit: contain;    
   }
 
 /* Udvalgt sektion */
