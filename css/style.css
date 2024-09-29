@@ -19,30 +19,34 @@ body {
 }  
 
 /* Header design */
-.header {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     background: #8CAE89;
     font-size: 30px;
     height: 75px;
+    padding: 0 20 px;
   }
 
 .header-icons {
-    margin-top: 5px;
-}
-
-  /* Ikoner der deler fælles design TIL VENSTRE */
-.header-icons-left {
-    width: 60px;
-    height: 60px;
-    border: 2px solid blue;
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
     padding: 2px;
 }
 
-  /* Ikoner der deler fælles design TIL HØJRE */
-.header-icons-right {
-    width: 60px;
-    height: 60px;
-    border: 2px solid blue;
-    padding: 2px;
+.header-icons-left, .header-icons-right {
+    display: flex;
+    margin: 0 10px;
+}
+
+.header-icons-left img {
+    margin-right: 12px
+}
+
+.header-icons-right img {
+    margin-left: 12px
 }
 
 .hero {
