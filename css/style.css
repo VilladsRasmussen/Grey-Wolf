@@ -141,6 +141,8 @@ header {
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
+    width: auto;
+    height: auto;
   }
   
 .matriale-udvalg {
@@ -149,6 +151,10 @@ header {
     border: 1px solid #ccc;
   }
 
+.matriale-udvalg img {
+    width: auto;
+    height: 120px;
+}
 
 
 
@@ -170,6 +176,7 @@ header {
     width: 100%;
     height: auto;
     margin: 20px;
+
 }
 
 .certifi {
@@ -181,8 +188,14 @@ header {
 .undermenuer {
     background: #EBE8DF;
     font-size: 30px;
-    height: auto;
+    width: auto;
+    height: 60px;
 }
+
+
+
+
+
 
 .footer {
     background: #8CAE89;
