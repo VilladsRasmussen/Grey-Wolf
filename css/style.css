@@ -64,12 +64,21 @@ header {
     height: auto;
 }
 
+/* Genbrugs Sektion */
 .genbrug {
-    text-align: center;
     background: #807070;
     font-size: 30px;
-    height: 553px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;    /* Center the image vertically */
+    height: 60vh;          /* Full viewport height, adjust as needed */
 }
+
+.responsive-image {
+    max-width: 100%;       /* Ensure the image does not exceed the width of its container */
+    max-height: 100%;      /* Ensure the image does not exceed the height of its container */
+    object-fit: contain;    /* Maintain the aspect ratio and ensure the whole image is visible */
+  }
 
 .udvalgt {
     text-align: center;
