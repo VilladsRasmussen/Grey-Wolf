@@ -1,10 +1,9 @@
 /* Indsat Poppins text */
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins/Poppins-Thin.ttf");
+    src: url("Poppins/Poppins-SemiBold.ttf");
   }
 
-/* Indsat Poppins text til siden */
 * {
     box-sizing: border-box;
     margin: auto;
@@ -12,9 +11,14 @@
     font-weight: bold;
   }
 
-/* Buttons farver */
+/* Buttons generelle design-indstillninger */
 .button-farve {
     background-color: #E99F83 ;
+}
+
+a {
+    color:white;
+    text-decoration: none;
 }
   
 /* Baggrundsfarve & bredde for hjemmesiden */
