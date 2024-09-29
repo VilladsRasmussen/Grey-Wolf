@@ -161,26 +161,26 @@ h2 {
     text-align: center;
     background: #807070;
     font-size: 30px;
-    height: 172px;
+    height: auto;
 }
 
 .mærker {
     text-align: center;
     background: #EBE8DF;
     font-size: 30px;
-    height: 262px;
+    height: auto;
 }
 
 .undermenuer {
     text-align: center;
     background: #EBE8DF;
     font-size: 30px;
-    height: 176px;
+    height: auto;
 }
 
 .footer {
     text-align: center;
     background: #8CAE89;
     font-size: 305px;
-    height: 305px;
+    height: auto;
 }
