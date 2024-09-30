@@ -5,7 +5,7 @@
   }
 
 * {
-    text-align: center;
+    text-align: center; /* Måskle problematisk */
     box-sizing: border-box;
     margin: auto;
     font-family: Poppins;
@@ -27,6 +27,10 @@ h2 {
     margin-top: 20px;
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 body {
@@ -185,14 +189,38 @@ header {
 }
 
 /* Undermenuer */
-.undermenuer {
+
+#undermenu1 {
     background: #EBE8DF;
-    font-size: 30px;
     width: auto;
     height: 60px;
+    margin-bottom: 6px;
+    text-align: left;
 }
 
+#undermenu2 {
+    background: #EBE8DF;
+    width: auto;
+    height: 60px;
+    margin-bottom: 6px;
+    text-align: left;
+}
 
+#undermenu3 {
+    background: #EBE8DF;
+    width: auto;
+    height: 60px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+#undermenu4 {
+    background: #EBE8DF;
+    width: auto;
+    height: 60px;
+    margin-bottom: 6px;
+    text-align: left;
+}
 
 
 
