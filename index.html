@@ -10,7 +10,7 @@
 <body>
 
     <!--Headeren-->
-    <header class="section">
+    <header class="section menu-header">
         <div class="header-icons-left">
             <a href="https://www.elgiganten.dk/"> <!-- Menuside indsættes her -->
                 <i class="fa-solid fa-bars header-icons"></i>
@@ -32,125 +32,126 @@
     <!--Main-->
     <main>
 
-    <!-- Heroen -->
-    <main class="hero">
-        <video autoplay muted loop id="hero-video">
-            <source src="vid/Grey wolf.mp4" type="video/mp4">
-            Din browser støtter ikke denne video. Prøv en anden browser eller genindlæs siden.
-        </video>
-    </section>
-    
-    <!-- Genbrugssektion -->
-    <section class="genbrug section">
-        <div class="shop-slogna-beregn">
+        <!-- Heroen -->
+        <div class="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="vid/Grey wolf.mp4" type="video/mp4">
+                Din browser støtter ikke denne video. Prøv en anden browser eller genindlæs siden.
+            </video> 
+            <div id="hero-footer">
+                <a class="link-text" href="index.html"> <!-- Ændre linket -->
+                    <button class="knap-stor knap-orange">Shop Nu</button>
+                </a>
+            </div>
+        </div> 
+        
+        <!-- Genbrugssektion -->
+        <section class="genbrug section">
+            <div class="shop-slogna-beregn">
+                
+                <img src="img/Forvandl.png" class="responsive-image" alt="Forvandl Dine gamle sokker til et Bæredygtigt ´Tidsløst Jakkesæt">
+
+
+                <!-- Genbrugsberegneren -->
+                <div class="overlay" id="myOverlay"></div> <!-- Add this overlay div -->
+                <div class="popup button-farve button1" onclick="myFunction()">Beregn Nu
+                    <span class="popuptext" id="myPopup">
+                        <svg class="krydset" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                            <path d="M1 1L23 22.0833" stroke="#8E8E8E" stroke-width="2"/>
+                            <path d="M23 1L1 22.0833" stroke="#8E8E8E" stroke-width="2"/>
+                        </svg>
+                        <h3>Genbrugsberegner</h3>
+                        <p>Indsæt mængden af kilo samt matriale
+                            <br>du ville sende ind, også ville vi finde ud
+                            <br>af, hvad du kan få af Store Credits for det!
+                        </p>
+                        <div class="divider"></div>
+                        <h4>Hvor mange kilo ville du sende?</h4>
+                    </span>
+                </div>
+                <script>
+                    // When the user clicks on <div>, open the popup
+                    function myFunction() {
+                    var popup = document.getElementById("myPopup");
+                    var overlay = document.getElementById("myOverlay");
+                    popup.classList.toggle("show");
+                    overlay.classList.toggle("show");  // Show the overlay
+                    }
+                </script>
+            </div>  
+        </section>
+
+        <!-- Udvalgt produkt (Har ikke lavet den pt.)-->
+        <article class="udvalgt section">
+            <!-- Indsæt shopvarene udvalgt her-->
+        </article>
+
+
+        <!-- Matrialer -->
+        <section class="matrialer section">
+            <h2>Vores Matrialer</h2>
+            <div class="matrialer-content">
+                <div class="matriale-udvalg">
+                    <img src="img/Bambus.jpg"> <!-- Indsæt billede -->
+                    <p class="smalltext">Bambus</p>
+                </div>
+                <div class="matriale-udvalg">
+                    <img src="img/Økologisk bomuld.jpg"> <!-- Indsæt billede -->
+                    <p class="smalltext">Økologisk Bomuld</p>
+                </div>
+                <div class="matriale-udvalg">
+                    <img src="img/Hør.jpg"> <!-- Indsæt billede -->
+                    <p class="smalltext">Hør</p>
+                </div>
+            </div>
+            <p>Grey Wolf producerer bæredygtigt tøj med fokus på
+            <br>naturlige materialer som bambus, økologisk bomuld
+            <br>og hør. Ved at vælge disse materialer reducerer
+            <br>virksomheden deres CO2 -aftryk, da det kræver mindre 
+            <br>vand og energi at fremstille.</p>
             <a class="link-text" href="index.html"> <!-- Ændre linket -->
                 <div class="button-farve button1">
-                    <p>Shop Nu</p>
+                    <p id="readmore">Læs Mere</p>
                 </div>
             </a>
-            <img src="img/Forvandl.png" class="responsive-image" alt="Forvandl Dine gamle sokker til et Bæredygtigt ´Tidsløst Jakkesæt">
+        </section>
 
 
-            <!-- Genbrugsberegneren -->
-            <div class="overlay" id="myOverlay"></div> <!-- Add this overlay div -->
-            <div class="popup button-farve button1" onclick="myFunction()">Beregn Nu
-                <span class="popuptext" id="myPopup">
-                    <svg class="krydset" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                        <path d="M1 1L23 22.0833" stroke="#8E8E8E" stroke-width="2"/>
-                        <path d="M23 1L1 22.0833" stroke="#8E8E8E" stroke-width="2"/>
-                    </svg>
-                    <h3>Genbrugsberegner</h3>
-                    <p>Indsæt mængden af kilo samt matriale
-                        <br>du ville sende ind, også ville vi finde ud
-                        <br>af, hvad du kan få af Store Credits for det!
-                    </p>
-                    <div class="divider"></div>
-                    <h4>Hvor mange kilo ville du sende?</h4>
-                </span>
+
+        <section class="certificeringer section"></section>
+            <h2>Certificeringer</h2>
+            <p class="beskrivelse">Grey Wolf er certificeret med GOTS, FSC og OEKO-TEX,
+            <br>hvilket sikrer høj standard for bæredygtighed i 
+            <br>produktionen. GOTS garanterer økologisk 
+            <br>tekstilproduktion, FSC-certifikatet bekræfter
+            <br>ansvarlig skovdrift, og OEKO-TEX sikrer, at deres tøj
+            <br>er fri for skadelige kemikalier.</p>
+            <div id="afstand"></div>
+        </section>
+
+        <!-- Mærker -->
+        <section class="mærker section"></section>
+            <div class="ramme">
+                <img class="certifi" src="img/certificeringer.png" alt="Forskellige certificeringr, herfra FSC, GOTS og OEKO-TEX">
             </div>
-            <script>
-                // When the user clicks on <div>, open the popup
-                function myFunction() {
-                  var popup = document.getElementById("myPopup");
-                  var overlay = document.getElementById("myOverlay");
-                  popup.classList.toggle("show");
-                  overlay.classList.toggle("show");  // Show the overlay
-                }
-            </script>
-        </div>  
-    </section>
-
-    <!-- Udvalgt produkt (Har ikke lavet den pt.)-->
-    <article class="udvalgt section">
-        <!-- Indsæt shopvarene udvalgt her-->
-    </article>
+        </section>
 
 
-    <!-- Matrialer -->
-    <section class="matrialer section">
-        <h2>Vores Matrialer</h2>
-        <div class="matrialer-content">
-            <div class="matriale-udvalg">
-                <img src="img/Bambus.jpg"> <!-- Indsæt billede -->
-                <p class="smalltext">Bambus</p>
+        <!-- Undermenuer -->
+        <section class="undermenuer">
+            <div id="undermenu1">
+                <h3>FAQ</h3>
             </div>
-            <div class="matriale-udvalg">
-                <img src="img/Økologisk bomuld.jpg"> <!-- Indsæt billede -->
-                <p class="smalltext">Økologisk Bomuld</p>
+            <div id="undermenu2">
+                <h3>Genbrugssystemet</h3>
             </div>
-            <div class="matriale-udvalg">
-                <img src="img/Hør.jpg"> <!-- Indsæt billede -->
-                <p class="smalltext">Hør</p>
+            <div id="undermenu3">
+                <h3>Betalningsmetoder</h3>
             </div>
-        </div>
-        <p>Grey Wolf producerer bæredygtigt tøj med fokus på
-        <br>naturlige materialer som bambus, økologisk bomuld
-        <br>og hør. Ved at vælge disse materialer reducerer
-        <br>virksomheden deres CO2 -aftryk, da det kræver mindre 
-        <br>vand og energi at fremstille.</p>
-        <a class="link-text" href="index.html"> <!-- Ændre linket -->
-            <div class="button-farve button1">
-                <p id="readmore">Læs Mere</p>
+            <div id="undermenu4">
+                <h3>Vilkår og betingelser</h3>
             </div>
-        </a>
-    </section>
-
-
-
-    <section class="certificeringer section"></section>
-        <h2>Certificeringer</h2>
-        <p class="beskrivelse">Grey Wolf er certificeret med GOTS, FSC og OEKO-TEX,
-        <br>hvilket sikrer høj standard for bæredygtighed i 
-        <br>produktionen. GOTS garanterer økologisk 
-        <br>tekstilproduktion, FSC-certifikatet bekræfter
-        <br>ansvarlig skovdrift, og OEKO-TEX sikrer, at deres tøj
-        <br>er fri for skadelige kemikalier.</p>
-        <div id="afstand"></div>
-    </section>
-
-    <!-- Mærker -->
-    <section class="mærker section"></section>
-        <div class="ramme">
-            <img class="certifi" src="img/certificeringer.png" alt="Forskellige certificeringr, herfra FSC, GOTS og OEKO-TEX">
-        </div>
-    </section>
-
-
-    <!-- Undermenuer -->
-    <section class="undermenuer">
-        <div id="undermenu1">
-            <h3>FAQ</h3>
-        </div>
-        <div id="undermenu2">
-            <h3>Genbrugssystemet</h3>
-        </div>
-        <div id="undermenu3">
-            <h3>Betalningsmetoder</h3>
-        </div>
-        <div id="undermenu4">
-            <h3>Vilkår og betingelser</h3>
-        </div>
-    </section>
+        </section>
 
     </main>
     <!--Main Sektion slut-->
