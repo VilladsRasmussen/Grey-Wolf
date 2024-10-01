@@ -49,15 +49,36 @@
                 </div>
             </a>
             <img src="img/Forvandl.png" class="responsive-image" alt="Forvandl Dine gamle sokker til et Bæredygtigt ´Tidsløst Jakkesæt">
-            <a class="link-text" href="index.html"> <!-- Ændre linket -->
-                <div class="button-farve button1">
-                    <p>Beregn</p>
-                </div>
-            </a>
+
+
+            <!-- Genbrugsberegneren -->
+            <div class="overlay" id="myOverlay"></div> <!-- Add this overlay div -->
+            <div class="popup button-farve button1" onclick="myFunction()">Beregn Nu
+                <span class="popuptext" id="myPopup">
+                    <svg class="krydset" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+                        <path d="M1 1L23 22.0833" stroke="#8E8E8E" stroke-width="2"/>
+                        <path d="M23 1L1 22.0833" stroke="#8E8E8E" stroke-width="2"/>
+                    </svg>
+                    <h3>Genbrugsberegner</h3>
+                    <p>Indsæt mængden af kilo samt matriale
+                        <br>du ville sende ind, også ville vi finde ud
+                        <br>af, hvad du kan få af Store Credits for det!
+                    </p>
+                    <div class="divider"></div>
+                    <h4>Hvor mange kilo ville du sende?</h4>
+                </span>
+            </div>
+            <script>
+                // When the user clicks on <div>, open the popup
+                function myFunction() {
+                  var popup = document.getElementById("myPopup");
+                  var overlay = document.getElementById("myOverlay");
+                  popup.classList.toggle("show");
+                  overlay.classList.toggle("show");  // Show the overlay
+                }
+            </script>
         </div>  
     </section>
-
-
 
     <!-- Udvalgt produkt (Har ikke lavet den pt.)-->
     <article class="udvalgt section">

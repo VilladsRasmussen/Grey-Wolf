@@ -28,7 +28,17 @@ h2 {
 }
 
 h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h4 {
     font-size: 16px;
+}
+
+
+p {
+    font-size: 12px;
 }
 
 body {
@@ -93,7 +103,8 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: white
+    color: white;
+    align-self: center;
 }
 
 .genbrug {
@@ -119,6 +130,89 @@ header {
   }
 
 
+
+/* Pop-op af genbrugsberegner */  
+
+/* Popup container */
+.popup {
+    position: relative;
+    cursor: pointer;
+  }
+
+.krydset { /* Mangler at have funktion */
+    width: 22px;
+    height: 21.083px;
+    position: absolute;
+    right: 25px;
+    top: 27px; 
+}
+
+.divider {
+    padding-top: 20px;
+}
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 346px;
+    height: 498px;
+    background-color: #EBE8DF;
+    color: black;
+    text-align: center;
+    border-radius: 26px;
+    padding: 50px 10px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -170px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 2;
+  }
+  
+/* Overlay to darken the background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
+    visibility: hidden;
+    opacity: 0; /* Start hidden with opacity 0 */
+    transition: opacity 0.5s ease, visibility; /* Smooth fade-in and fade-out */
+    z-index: 1; /* Behind the popup */
+  }
+
+/* When overlay is visible */
+.overlay.show {
+    visibility: visible;
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.5s ease, visibility 0s; /* Makes visible instantly */
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
+
 /* Udvalgt */
 .udvalgt {
     background: white;
@@ -126,6 +220,7 @@ header {
     height: 476px;
     color: black
 }
+
 
 
 /* Matrialer */
