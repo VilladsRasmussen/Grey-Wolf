@@ -1,14 +1,12 @@
 /* Indsat Poppins text */
 @font-face {
     font-family: "Poppins";
-    src: url("Poppins/Poppins-SemiBold.ttf");
+    src: url("Poppins/Poppins-Regular.ttf");
   }
 
 * {
     box-sizing: border-box;
-    margin: auto;
     font-family: Poppins;
-    font-weight: bold;
   }
 
 /* Generelle design-indstillninger */
@@ -104,7 +102,7 @@ header {
 #hero-footer {
     position: absolute;
     left: 0;
-    bottom: 3%;
+    bottom: 7%;
     display: flex; 
     justify-content: center;
     width: 100%;
@@ -123,24 +121,23 @@ header {
     cursor: pointer;
 }
 .knap-stor {
-    width: 180px;
-    height: 69px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    font-size: 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
 
+.knap-mellem {
+    padding: 12px 17px;
+    font-size: 1em;
 }
 
 .genbrug {
     background: #807070;
     font-size: 30px;
-    display: flex;  /* Tillader mere fleksibilitet ved rykning af elementer */
+    display: flex;
     height: auto;   
     color: white;
     align-items: center;
-    flex-direction: column; /* Sætter elementerne lodret */ 
+    flex-direction: column;
 }
 
 .responsive-image {
@@ -150,27 +147,44 @@ header {
 }
 
 .beregner-container {
+    position: fixed;
+    z-index: 10;
     color: black;
     display: flex;
+    flex-direction: column;
     width: 346px;
     height: 498px;
-    padding: 50px 10px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
+    justify-items: flex-start;
+    align-items: center;
     border-radius: 26px;
     background-color: #EBE8DF;
+    left: 50%;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transform: translate(-50%, 200%);
+    -ms-transform: translate(-50%, 200%);
+    transform: translate(-50%, 200%);
+}
 
-    -webkit-transform: translate(-200%, 0);
-    -ms-transform: translate(-200%, 0);
-    transform: translate(-200%, 0);
+.max-width {
+    width: 70%;
+}
+
+#close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 2em;
+    color: #8E8E8E;
 }
 
 .beregner:before {
     content: "";
     position:fixed;
+    z-index: 9;
     display:none;
-    background-color: rgba(0,0,0,.8); /* Det her gør der er sort over det hele */
+    background-color: rgba(0,0,0,.8);
     top: 0;
     left: 0;
     width: 100%;
@@ -181,13 +195,21 @@ header {
     display: block;
 }
 
-
 .beregner:target .beregner-container {
-    -webkit-transform: translate(-200%, 0);
-    -ms-transform: translate(-200%, 0);
-    transform: translate(-200%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
-  
+
+#store-credit-resultat {
+    display: none;
+}
+
+#store-credit-resultat:target {
+    display: block;
+}
+
+
 
 /* Udvalgt */
 .udvalgt {
