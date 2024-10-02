@@ -131,17 +131,6 @@ header {
     padding-bottom: 20px;
     font-size: 1em;
 }
-.button1 {
-    width: 180px;
-    height: 69px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    color: white;
-    align-self: center;
-}
 
 .genbrug {
     background: #807070;
@@ -170,7 +159,7 @@ header {
 
 
 
-  
+
 /* Pop-op af genbrugsberegner */  
 
 /* Popup container */
@@ -268,6 +257,7 @@ header {
     background-color: #807070;
     height: auto;
     color: White;
+    align-items: center;
 }
 
 .smalltext p {
