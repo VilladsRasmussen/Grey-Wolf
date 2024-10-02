@@ -8,7 +8,6 @@
     <title>Grey Wolf</title>
 </head>
 <body>
-3
     <!--Headeren-->
     <header class="menu-header">
         <div class="header-icons-left">
@@ -46,39 +45,18 @@
         </div> 
         
         <!-- Genbrugssektion -->
-        <section class="genbrug">
-            <div class="shop-slogna-beregn">
-                
+        <section>
+            <div class="genbrug">
                 <img src="img/Forvandl.png" class="responsive-image" alt="Forvandl Dine gamle sokker til et Bæredygtigt ´Tidsløst Jakkesæt">
-
-
-                <!-- Genbrugsberegneren -->
-                <div class="overlay" id="myOverlay"></div> <!-- Add this overlay div -->
-                <div class="popup knap-stor knap-orange" onclick="myFunction()">Beregn Nu
-                    <span class="popuptext" id="myPopup">
-                        <svg class="krydset" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-                            <path d="M1 1L23 22.0833" stroke="#8E8E8E" stroke-width="2"/>
-                            <path d="M23 1L1 22.0833" stroke="#8E8E8E" stroke-width="2"/>
-                        </svg>
-                        <h3>Genbrugsberegner</h3>
-                        <p>Indsæt mængden af kilo samt matriale
-                            <br>du ville sende ind, også ville vi finde ud
-                            <br>af, hvad du kan få af Store Credits for det!
-                        </p>
-                        <div class="divider"></div>
-                        <h4>Hvor mange kilo ville du sende?</h4>
-                    </span>
+                <button class="knap-orange knap-stor"><a href="#beregner">Begren Nu</a></button>
+                    <div class="beregner" id="beregner"> <!-- Moduale -->
+                        <div class="beregner-container">
+                            <p>I dont love coding</p>
+                            <a href="#">Close</a>
+                        </div>
+                    </div>
                 </div>
-                <script>
-                    // When the user clicks on <div>, open the popup
-                    function myFunction() {
-                    var popup = document.getElementById("myPopup");
-                    var overlay = document.getElementById("myOverlay");
-                    popup.classList.toggle("show");
-                    overlay.classList.toggle("show");  // Show the overlay
-                    }
-                </script>
-            </div>  
+            </div>
         </section>
 
         <!-- Udvalgt produkt (Har ikke lavet den pt.)-->
@@ -133,8 +111,10 @@
 
         <!-- Mærker -->
         <section class="mærker">
-            <img id=fsc src="img/FSC.png" alt="FSC-logoet">
-            <img id=gots src="img/GOTS.png" alt="GOTS-logoet">
+            <div id="fsc-gots">
+                <img src="img/FSC.png" alt="FSC-logoet">
+                <img src="img/GOTS.png" alt="GOTS-logoet">
+            </div>
             <img id=oeko src="img/Oeko-tex.png" alt="OEKO_TEX-logoet">
         </section>
 
