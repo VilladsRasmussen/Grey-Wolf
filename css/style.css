@@ -299,13 +299,22 @@ header {
     font-size: 30px;
     width: 100%;
     height: auto;
-    margin: 20px;
+    margin: auto;
     color: white
 }
 
-.certifi {
-    width: 100%;
-    height: auto;
+#fsc-gots {
+    overflow-inline: center;
+}
+
+#fsc {
+    width: 50%;    
+    height: 50%;
+}
+
+#gots {
+    width: 50%;    
+    height: 50%;
 }
 
 /* Undermenuer */
