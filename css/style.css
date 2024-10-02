@@ -170,7 +170,7 @@ header {
     content: "";
     position:fixed;
     display:none;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,.8); /* Det her gør der er sort over det hele */
     top: 0;
     left: 0;
     width: 100%;
