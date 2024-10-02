@@ -39,7 +39,7 @@
                 Din browser støtter ikke denne video. Prøv en anden browser eller genindlæs siden.
             </video> 
             <div id="hero-footer">
-                <a href="index.html"> <!-- Ændre linket -->
+                <a class="link-text" href="index.html"> <!-- Ændre linket -->
                     <button class="knap-stor knap-orange">Shop Nu</button>
                 </a>
             </div>
@@ -47,13 +47,14 @@
         
         <!-- Genbrugssektion -->
         <section class="genbrug">
-            <div class="shop-slogan-beregn">
+            <div class="shop-slogna-beregn">
                 
                 <img src="img/Forvandl.png" class="responsive-image" alt="Forvandl Dine gamle sokker til et Bæredygtigt ´Tidsløst Jakkesæt">
 
+
                 <!-- Genbrugsberegneren -->
                 <div class="overlay" id="myOverlay"></div> <!-- Add this overlay div -->
-                <button class="popup knap-stor knap-orange" onclick="myFunction()">Beregn Nu
+                <div class="popup knap-stor knap-orange" onclick="myFunction()">Beregn Nu
                     <span class="popuptext" id="myPopup">
                         <svg class="krydset" xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                             <path d="M1 1L23 22.0833" stroke="#8E8E8E" stroke-width="2"/>
@@ -94,15 +95,15 @@
             <div class="matrialer-content">
                 <div class="matriale-udvalg">
                     <img src="img/Bambus.jpg"> <!-- Indsæt billede -->
-                    <p>Bambus</p>
+                    <p class="smalltext">Bambus</p>
                 </div>
                 <div class="matriale-udvalg">
                     <img src="img/Økologisk bomuld.jpg"> <!-- Indsæt billede -->
-                    <p">Økologisk Bomuld</p>
+                    <p class="smalltext">Økologisk Bomuld</p>
                 </div>
                 <div class="matriale-udvalg">
                     <img src="img/Hør.jpg"> <!-- Indsæt billede -->
-                    <p>Hør</p>
+                    <p class="smalltext">Hør</p>
                 </div>
             </div>
             <p>Grey Wolf producerer bæredygtigt tøj med fokus på
@@ -110,23 +111,24 @@
             <br>og hør. Ved at vælge disse materialer reducerer
             <br>virksomheden deres CO2 -aftryk, da det kræver mindre 
             <br>vand og energi at fremstille.</p>
-            <button class="knap-stor knap-orange">
-                <a href="index.html">Læs Mere <!-- Ændre linket -->
-                </a>
-            </button>
+            <a class="link-text" href="index.html"> <!-- Ændre linket -->
+                <button class="knap-stor knap-orange">
+                    <p id="readmore">Læs Mere</p>
+                </div>
+            </a>
         </section>
 
 
 
         <section class="certificeringer"></section>
             <h2>Certificeringer</h2>
-            <p>Grey Wolf er certificeret med GOTS, FSC og OEKO-TEX,
+            <p class="beskrivelse">Grey Wolf er certificeret med GOTS, FSC og OEKO-TEX,
             <br>hvilket sikrer høj standard for bæredygtighed i 
             <br>produktionen. GOTS garanterer økologisk 
             <br>tekstilproduktion, FSC-certifikatet bekræfter
             <br>ansvarlig skovdrift, og OEKO-TEX sikrer, at deres tøj
             <br>er fri for skadelige kemikalier.</p>
-            <div class="divider"></div>
+            <div id="afstand"></div>
         </section>
 
         <!-- Mærker -->
