@@ -33,6 +33,7 @@ h3 {
 
 h4 {
     font-size: 16px;
+
 }
 
 
@@ -44,6 +45,7 @@ body {
     background-color: #807070;
     width: 100%;
     padding-top: 75px;
+    margin: auto;
 }  
 
 /* Header design */
@@ -123,6 +125,7 @@ header {
 .knap-stor {
     padding: 15px 30px;
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .knap-mellem {
@@ -222,36 +225,21 @@ header {
 /* Matrialer */
 .matrialer {
     background-color: #807070;
-    height: auto;
     color: White;
-    align-items: center;
 }
-
 
 .matrialer-content {
-    display: flex;          
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
-    width: auto;
-    height: auto;
-    color: white
-  }
-  
-.matriale-udvalg {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
-    color: white
-  }
+    display: flex;
+    margin: 10px;
+    width: 50%;
 
-.matriale-udvalg img {
-    width: auto;
-    height: 120px;
-    color: white
 }
 
-
+.matrialer-udvalg img {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
 /* Certificeringer */
 .certificeringer {
