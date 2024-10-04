@@ -263,12 +263,6 @@ header {
 /* Mærker */
 .mærker {
     background: #EBE8DF;
-    font-size: 30px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 5px;
-    color: white
 }
 
 #fsc-gots {
@@ -285,11 +279,10 @@ header {
 }
 
 #oeko {
-    display: flex; /*Tillader nemmere rykning med indholdet*/
-    justify-content: center; /*centrer billederne vandret*/
     width: 400px;
-    height: auto;
-    padding-bottom: 20px; /*Skaber afstand mellem bunden af sektionen og billedet*/
+    height: 100%;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 /* Undermenuer */
