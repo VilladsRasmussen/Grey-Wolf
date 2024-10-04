@@ -5,7 +5,6 @@
   }
 
 * {
-    box-sizing: border-box;
     font-family: Poppins;
   }
 
@@ -21,9 +20,9 @@ a {
 }
 
 h2 {
-    margin-top: 20px;
     font-size: 40px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: -1px;
 }
 
 h3 {
@@ -226,27 +225,39 @@ header {
 .matrialer {
     background-color: #807070;
     color: White;
+    align-content: center;
+    margin-bottom: 20px;
 }
 
-.matrialer-content {
-    display: flex;
+.matrialer-og-certificeringer {
+    text-align: center; /* Center text inside the container */
+  }
+  
+  .matrialer-content {
+    display: flex; /* Create a horizontal row */
+    justify-content: center; /* Center the columns horizontally */
+    align-items: flex-start; /* Align items at the top */
+    margin: 0 auto; /* Center the row itself */
+  }
+  
+  .matrialer-udvalg {
+    text-align: center; /* Center text in each column */
+    margin: 0 20px; /* Space between columns */
+  }
+
+#matriale-img {
+    width: 80% !important;
+    height: 80% !important;
+}
+
+.matrialer-paragraf {
+    text-align: center !important;
+    font-size: 16px;
     margin: 10px;
-    width: 50%;
-
 }
 
-.matrialer-udvalg img {
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-/* Certificeringer */
-.certificeringer {
-    background: #807070;
-    width: 100%;
-    height: auto;
-    color: white
+.divider {
+    padding: 10px;
 }
 
 /* Mærker */
