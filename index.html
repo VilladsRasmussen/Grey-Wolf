@@ -8,7 +8,6 @@
     <title>Grey Wolf</title>
 </head>
 <body>
-
     <div class="beregner" id="beregner"> <!-- Moduale -->
         <div class="beregner-container">
             <a href="#" id="close-button"><i class="fa-solid fa-xmark"></i></a>
@@ -94,11 +93,47 @@
             </div>
         </section>
 
-        <!-- Udvalgt produkt (Har ikke lavet den pt.)-->
-        <article class="udvalgt">
-            <img src="img/dame-blazer-brun.png"/> 
-        </article>
-
+        <!-- Udvalgt produkt -->
+         <section id="carusel-blazer">
+            <input type="radio" class="slide-trigger" name="blazer" value="dame" id="blazer-dame" checked />
+            <div id="first-slide" class="slide">
+                <label for="blazer-herre"><i class="fa-solid fa-chevron-left"></i></label>
+                <div class="slide-content">
+                    <div>
+                        <img src="img/herre-blazer-brun.png" alt="herre-blazer-brun" />
+                    </div>
+                    <select name="" id="" class="size-selector">
+                        <option disabled selected>Vælg størrelse</option>
+                        <option>XSMALL</option>
+                        <option>SMALL</option>
+                        <option>MEDIUM</option>
+                        <option>LARGE</option>
+                        <option>XLARGE</option>
+                        <option>XXLARGE</option>
+                    </select>
+                </div>
+                <label for="blazer-herre"><i class="fa-solid fa-chevron-right"></i></label>
+            </div>
+            <input type="radio" class="slide-trigger" name="blazer" value="herre" id="blazer-herre" />
+            <div class="slide">
+                <label for="blazer-dame"><i class="fa-solid fa-chevron-left"></i></label>
+                <div class="slide-content">
+                    <div>
+                        <img src="img/dame-blazer-brun.png" alt="dame-blazer-brun" />
+                    </div>
+                    <select name="" id="" class="size-selector">
+                        <option disabled selected>Vælg størrelse</option>
+                        <option>XSMALL</option>
+                        <option>SMALL</option>
+                        <option>MEDIUM</option>
+                        <option>LARGE</option>
+                        <option>XLARGE</option>
+                        <option>XXLARGE</option>
+                    </select>
+                </div>
+                <label for="blazer-dame"><i class="fa-solid fa-chevron-right"></i></label>
+            </div>
+        </section>
         <!-- Matrialer & Certificeringer -->
         <section class="matrialer">
             <h2>Vores Matrialer</h2>
