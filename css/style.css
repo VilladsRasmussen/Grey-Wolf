@@ -23,6 +23,7 @@ h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: -1px;
+    color: white;
 }
 
 h3 {
@@ -326,6 +327,56 @@ header {
     margin-bottom: 6px;
     text-align: left;
     color: black;
+}
+
+
+/* Shopside elementer */
+
+.selector-række {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.kasse-selector {
+    transform: scale(1.2);
+    transform-origin: top left right;
+}
+
+.højre-element {
+    margin-left: 35px;
+}
+
+.venstre-element {
+    margin-right: 35px;
+}
+
+.orange-selector {
+    background-color: #E99F83;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    margin-top: -13px;
+}
+
+.orange-selector h3 { /*Denne og de to andre elementer nedenfor er med til at rette op på text og ikoner */
+    margin-right: 35px;
+    margin-bottom: -20px;
+    position: relative;
+    bottom: 24px;
+    left: 11px;
+}
+
+.venstre-element i {
+    position: relative;
+    left: 7px;
+}
+
+.højre-element i {
+    position: relative;
+    right: 6px;
 }
 
 /* Footeren */
