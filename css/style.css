@@ -361,7 +361,7 @@ header {
     margin-top: -13px;
 }
 
-.orange-selector h3 { /*Denne og de to andre elementer nedenfor er med til at rette op på text og ikoner */
+.orange-selector h3 { /*Denne og resten af de andre elementer inden footeren nedenfor er med til at rette op på text og ikoner */
     margin-right: 35px;
     margin-bottom: -20px;
     position: relative;
@@ -377,6 +377,11 @@ header {
 .højre-element i {
     position: relative;
     right: 6px;
+}
+
+.blazer i {
+    position: relative;
+    right: 4px;
 }
 
 /* Footeren */
