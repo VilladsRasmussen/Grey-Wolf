@@ -14,9 +14,8 @@
 }
 
 a {
-    color:white;
+    color:black;
     text-decoration: none;
-    font-size: 30px;
 }
 
 h2 {
@@ -29,6 +28,7 @@ h2 {
 h3 {
     font-size: 28px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h4 {
@@ -39,6 +39,7 @@ h4 {
 
 p {
     font-size: 12px;
+    margin: 0;
 }
 
 body {
@@ -386,7 +387,102 @@ header {
 
 /* Footeren */
 .footer {
-    background: #8CAE89;
-    font-size: 305px;
+    background: #EBE8DF;
     height: auto;
+}
+
+/*Accordion*/
+.tab {
+    position: relative;
+    border-bottom: 8px solid #807070;
+}
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s;
+    background-color: #F3F0E6;
+}
+.tab input:checked ~ .tab-content {
+    max-height: 10rem;
+} 
+.tab-content-inner {
+    padding: 1.5rem;
+}
+.accordion {
+    overflow: hidden;
+}
+.tab-label, .tab-close {
+    display: flex;
+    color: black;
+    background-color: #EBE8DF;
+    cursor: pointer;
+}
+.tab-label {
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1.3rem;
+}
+
+#payment-logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-label h4 {
+    margin: 0;
+}
+
+.tab input:checked + .tab-label .fa-chevron-down {
+    transform: rotate(180deg);
+}
+.tab-content p {
+    margin: 0;
+}
+.tab-close {
+    justify-content: flex-end;
+    font-size: 0.75rem;
+}
+.tab input:not(:checked) + .tab-label:hover:after {
+animation: bounce .5s infinite;
+}
+@keyframes bounce {
+    25% {
+        transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+        transform: rotate(90deg) translate(-.25rem);
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#footer-bottom {
+    background-color: #8CAE89;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#some-logos {
+    font-size: 2rem;
+}
+
+#newsletter-email {
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 0.5rem;
 }
