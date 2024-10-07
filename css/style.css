@@ -14,7 +14,7 @@
 }
 
 a {
-    color: white;
+    color:black;
     text-decoration: none;
 }
 
@@ -71,7 +71,8 @@ header {
     width: 50px;
     height: 50px;
     padding: 2px;
-    margin-top: 7px;
+    margin-top: 15px;
+    color: white !important;
 }
 
 .header-icons-left, .header-icons-right {
@@ -79,12 +80,8 @@ header {
     margin: 0 10px;
 }
 
-.header-icons-left img {
-    margin-right: 12px
-}
-
-.header-icons-right img {
-    margin-left: 12px
+#burgermenu {
+    margin-left: 10px;
 }
 
 /* Hero design */
@@ -319,6 +316,7 @@ display: block;
 /* Mærker */
 .mærker {
     background: #EBE8DF;
+    margin-bottom: 8px;
 }
 
 #fsc-gots {
@@ -337,8 +335,10 @@ display: block;
 #oeko {
     width: 400px;
     height: 100%;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 /* Undermenuer */
@@ -517,6 +517,7 @@ nav {
 
 #some-logos {
     font-size: 2rem;
+    padding-bottom: 20px;
 }
 
 #newsletter-email {
