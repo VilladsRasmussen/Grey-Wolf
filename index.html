@@ -8,6 +8,66 @@
     <title>Grey Wolf</title>
 </head>
 <body>
+    <input type="checkbox" id="burger-menu-toggler" />
+    <div class="burger-menu">
+        <label id="label-close-burger-menu" for="burger-menu-toggler">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <section class="accordion">
+            <div class="tab">
+                <input type="checkbox" id="bm-check-tab-1" />
+                <label class="tab-label" for="bm-check-tab-1"> 
+                    <h4>HERRE</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/herre-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label" for="bm-check-tab-2"> 
+                    <h4>DAME</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <input type="checkbox" id="bm-check-tab-2" />
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/dame-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/genbrugssystemet.html">GENBRUGSYSTEMET</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/materialer.html">MATERIALER</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/certificering.html">CERTIFICERING</a></h4>
+                </label>
+            </div> 
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/login.html">LOGIN</a></h4>
+                </label>
+            </div>   
+           </section>
+    </div>
     <div class="beregner" id="beregner"> <!-- Moduale -->
         <div class="beregner-container">
             <a href="#" id="close-button"><i class="fa-solid fa-xmark"></i></a>
@@ -53,11 +113,13 @@
     <!--Headeren-->
     <header class="menu-header">
         <div class="header-icons-left">
-            <a href="#"> <!-- Menuside indsættes her -->
+            <label for="burger-menu-toggler"> 
                 <i class="fa-solid fa-bars header-icons" id="burgermenu"></i>
-            </a>
+            </label>
+        </div>
+        <div class="header-icons-center">
             <a href="index.html"> <!-- Hovedmenu indsættes her -->
-                <i class="fa-solid fa-house header-icons"></i>
+                <img src="img/Grey Wolf Logo.png" id="header-logo"/>
             </a>
         </div>
         <div class="header-icons-right">
@@ -99,7 +161,26 @@
             <div id="first-slide" class="slide">
                 <label for="blazer-herre" class="btn-previous-slide"><i class="fa-solid fa-chevron-left"></i></label>
                 <div class="slide-content">
-                    <!--Indsæt farvevælger husk ersat dame med herre-->
+                    <div>
+                        <input type="radio" class="product-img-trigger" name="herre-blazer-color" value="brown" id="herre-blazer-brun" checked />
+                        <div class="product-img-large product-img herre-blazer-brun"></div>
+                        <input type="radio" class="product-img-trigger" name="herre-blazer-color" value="grey" id="herre-blazer-grå" />
+                        <div class="product-img-large product-img herre-blazer-grå"></div>
+                        <input type="radio" class="product-img-trigger" name="herre-blazer-color" value="black" id="herre-blazer-sort" />
+                        <div class="product-img-large product-img herre-blazer-sort"></div>
+                        <input type="radio" class="product-img-trigger" name="herre-blazer-color" value="beige" id="herre-blazer-beige" />
+                        <div class="product-img-large product-img herre-blazer-beige"></div>
+                        <input type="radio" class="product-img-trigger" name="herre-blazer-color" value="navy" id="herre-blazer-navy" />
+                        <div class="product-img-large product-img herre-blazer-navy"></div>
+                    </div>
+                    <div> 
+                        <label class="circle-small bg-brown" for="herre-blazer-brun"></label>
+                        <label class="circle-small bg-grey" for="herre-blazer-grå"></label>
+                        <label class="circle-small bg-black" for="herre-blazer-sort"></label>
+                        <label class="circle-small bg-beige" for="herre-blazer-beige"></label>
+                        <label class="circle-small bg-navy" for="herre-blazer-navy"></label>
+                    </div>
+
                     <select name="" id="" class="size-selector">
                         <option disabled selected>Vælg størrelse</option>
                         <option>XSMALL</option>
@@ -109,6 +190,8 @@
                         <option>XLARGE</option>
                         <option>XXLARGE</option>
                     </select>
+                    <h4>999,00 KR</h4>
+                    <button class="knap-mellem knap-grøn">Tilføj til kurv</button>
                 </div>
                 <label for="blazer-herre" class="btn-next-slide"><i class="fa-solid fa-chevron-right"></i></label>
             </div>
@@ -144,6 +227,8 @@
                         <option>XLARGE</option>
                         <option>XXLARGE</option>
                     </select>
+                    <h4>999,00 KR</h4>
+                    <button class="knap-mellem knap-grøn">Tilføj til kurv</button>
                 </div>
                 <label for="blazer-dame" class="btn-next-slide"><i class="fa-solid fa-chevron-right"></i></label>
             </div>

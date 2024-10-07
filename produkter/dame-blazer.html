@@ -8,22 +8,83 @@
     <title>Grey Wolf</title>
 </head>
 <body>
-    
+    <input type="checkbox" id="burger-menu-toggler" />
+    <div class="burger-menu">
+        <label id="label-close-burger-menu" for="burger-menu-toggler">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <section class="accordion">
+            <div class="tab">
+                <input type="checkbox" id="bm-check-tab-1" />
+                <label class="tab-label" for="bm-check-tab-1"> 
+                    <h4>HERRE</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/herre-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label" for="bm-check-tab-2"> 
+                    <h4>DAME</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <input type="checkbox" id="bm-check-tab-2" />
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/dame-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/genbrugssystemet.html">GENBRUGSYSTEMET</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/materialer.html">MATERIALER</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/certificering.html">CERTIFICERING</a></h4>
+                </label>
+            </div> 
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/login.html">LOGIN</a></h4>
+                </label>
+            </div>   
+           </section>
+    </div>
     <!--Headeren-->
     <header class="menu-header">
         <div class="header-icons-left">
-            <a href="https://www.elgiganten.dk/"> <!-- Menuside indsættes her -->
-                <i class="fa-solid fa-bars header-icons"></i>
-            </a>
-            <a href="index.html"> <!-- Hovedmenu indsættes her -->
-                <i class="fa-solid fa-house header-icons"></i>
+            <label for="burger-menu-toggler"> 
+                <i class="fa-solid fa-bars header-icons" id="burgermenu"></i>
+            </label>
+        </div>
+        <div class="header-icons-center">
+            <a href="../index.html"> <!-- Hovedmenu indsættes her -->
+                <img src="../img/Grey Wolf Logo.png" id="header-logo"/>
             </a>
         </div>
         <div class="header-icons-right">
-            <a href="https://www.elgiganten.dk/"> <!-- Profil side indsættes her -->
+            <a href="#"> <!-- Profil side indsættes her -->
                 <i class="fa-solid fa-user header-icons"></i>
             </a>
-            <a href="https://www.elgiganten.dk/"> <!-- Kurv-side indsættes her -->
+            <a href="#"> <!-- Kurv-side indsættes her -->
                 <i class="fa-solid fa-cart-shopping header-icons"></i>
             </a>
         </div>
@@ -57,6 +118,7 @@
                         <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="navy" id="dame-blazer-navy" />
                         <div class="product-img-large product-img dame-blazer-navy"></div>
                     </div>
+                    <p>Klassisk hør blazer til kvinder</p>
                     <div> 
                         <label class="circle-small bg-brown" for="dame-blazer-brun"></label>
                         <label class="circle-small bg-grey" for="dame-blazer-grå"></label>
@@ -73,6 +135,8 @@
                         <option>XLARGE</option>
                         <option>XXLARGE</option>
                     </select>
+                    <h4>999,00 KR</h4>
+                    <button class="knap-mellem knap-grøn">Tilføj til kurv</button>
                 </div>
             </div>
             <input type="radio" class="tab-trigger" name="tab" id="tab-trigger-2" />
@@ -83,7 +147,101 @@
                     <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
                 </div>
                 <div class="tab-content">
-                    <!--Tab content goes here :D-->
+                    <h3>Nemt valg - fuldend dit look</h3>
+                    <div class="look-products-row">
+                        <div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-blazer-color" value="brown" id="lille-dame-blazer-brun" checked />
+                            <div class="product-img-small product-img lille-dame-blazer-brun"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-blazer-color" value="grey" id="lille-dame-blazer-grå" />
+                            <div class="product-img-small product-img lille-dame-blazer-grå"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-blazer-color" value="black" id="lille-dame-blazer-sort" />
+                            <div class="product-img-small product-img lille-dame-blazer-sort"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-blazer-color" value="beige" id="lille-dame-blazer-beige" />
+                            <div class="product-img-small product-img lille-dame-blazer-beige"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-blazer-color" value="navy" id="lille-dame-blazer-navy" />
+                            <div class="product-img-small product-img lille-dame-blazer-navy"></div>
+                        </div>
+                        <i class="fa-solid fa-plus"></i>
+                        <div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-skjorte-color" value="blue" id="lille-dame-skjorte-blå" checked />
+                            <div class="product-img-small product-img lille-dame-skjorte-blå"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-skjorte-color" value="white" id="lille-dame-skjorte-hvid" />
+                            <div class="product-img-small product-img lille-dame-skjorte-hvid"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-skjorte-color" value="tan" id="lille-dame-skjorte-tan" />
+                            <div class="product-img-small product-img lille-dame-skjorte-tan"></div>
+                        </div>
+                        <i class="fa-solid fa-plus"></i>
+                        <div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-buks-color" value="brown" id="lille-dame-buks-brun" checked />
+                            <div class="product-img-small product-img lille-dame-buks-brun"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-buks-color" value="grey" id="lille-dame-buks-grå" />
+                            <div class="product-img-small product-img lille-dame-buks-grå"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-buks-color" value="black" id="lille-dame-buks-sort" />
+                            <div class="product-img-small product-img lille-dame-buks-sort"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-buks-color" value="beige" id="lille-dame-buks-beige" />
+                            <div class="product-img-small product-img lille-dame-buks-beige"></div>
+                            <input type="radio" class="product-img-trigger" name="lille-dame-buks-color" value="navy" id="lille-dame-buks-navy" />
+                            <div class="product-img-small product-img lille-dame-buks-navy"></div>
+                        </div>
+                    </div>
+                    <p id="spar-text"><i>Spar både miljøet og din pengepung for ekstra fragtomkostninger - køb samlet.</i></p>
+                    <h4 class="section-header">Blazer</h4>
+                    <div class="row gap-big">
+                        <div> 
+                            <label class="circle-small bg-brown" for="lille-dame-blazer-brun"></label>
+                            <label class="circle-small bg-grey" for="lille-dame-blazer-grå"></label>
+                            <label class="circle-small bg-black" for="lille-dame-blazer-sort"></label>
+                            <label class="circle-small bg-beige" for="lille-dame-blazer-beige"></label>
+                            <label class="circle-small bg-navy" for="lille-dame-blazer-navy"></label>
+                        </div>
+                        <select name="" id="" class="size-selector">
+                            <option disabled selected>Vælg størrelse</option>
+                            <option>XSMALL</option>
+                            <option>SMALL</option>
+                            <option>MEDIUM</option>
+                            <option>LARGE</option>
+                            <option>XLARGE</option>
+                            <option>XXLARGE</option>
+                        </select>
+                    </div>
+                    <h4 class="section-header">Bukser</h4>
+                    <div class="row gap-big">
+                        <div> 
+                            <label class="circle-small bg-brown" for="lille-dame-buks-brun"></label>
+                            <label class="circle-small bg-grey" for="lille-dame-buks-grå"></label>
+                            <label class="circle-small bg-black" for="lille-dame-buks-sort"></label>
+                            <label class="circle-small bg-beige" for="lille-dame-buks-beige"></label>
+                            <label class="circle-small bg-navy" for="lille-dame-buks-navy"></label>
+                        </div>
+                        <select name="" id="" class="size-selector">
+                            <option disabled selected>Vælg størrelse</option>
+                            <option>XSMALL</option>
+                            <option>SMALL</option>
+                            <option>MEDIUM</option>
+                            <option>LARGE</option>
+                            <option>XLARGE</option>
+                            <option>XXLARGE</option>
+                        </select>
+                    </div>
+                    <h4 class="section-header">Skjorte</h4>
+                    <div class="row gap-big">
+                        <div> 
+                            <label class="circle-small bg-blue" for="lille-dame-skjorte-blå"></label>
+                            <label class="circle-small bg-white" for="lille-dame-skjorte-hvid"></label>
+                            <label class="circle-small bg-tan" for="lille-dame-skjorte-tan"></label>
+                        </div>
+                        <select name="" id="" class="size-selector">
+                            <option disabled selected>Vælg størrelse</option>
+                            <option>XSMALL</option>
+                            <option>SMALL</option>
+                            <option>MEDIUM</option>
+                            <option>LARGE</option>
+                            <option>XLARGE</option>
+                            <option>XXLARGE</option>
+                        </select>
+                    </div>
+                    <h4>999,00 KR</h4>
+                    <button class="knap-mellem knap-grøn">Tilføj til kurv</button>
                 </div>
             </div>
             <input type="radio" class="tab-trigger" name="tab" id="tab-trigger-3" />
@@ -94,7 +252,24 @@
                     <div class="active">&nbsp;<!--Just here as background, we need the &nbsp;--></div>
                 </div>
                 <div class="tab-content">
-                    <!--Tab content goes here :D-->
+                    <div class="row flex-start">
+                        <h3>Godt for miljøet & dig!</h3>
+                    </div>
+                    <div class="row flex-start">
+                        <img src="../img/hør-ikon.png" />
+                        <p>Ved at købe bæredygtigt tøj, er du med til at skåne miljøet. Hør er en naturfiber, der udskiller et lavt klimaaftryk. Det er en fiber der ikke har brug for gødning og beskyttelsesmidler, ved at benytte hør, går der intet til spilde i produktionen, da det overskydende materiale bliver brugt til fremstilling af andre produkter. Hør absorbere fugt og på den måde hjælper den kroppen til at regulere ens kropstemperatur</p>
+                    </div>
+                    <br />
+                    <div class="row flex-start">
+                        <p>Ser man på tøj produceret i hør, er det også et tekstilfiber der er miljøvenligt, da det ikke har brug for meget vand for at vokse, samtidig med at det er allergivenligt og er åndbart, så det ikke er ubehageligt at have på.</p>
+                        <img src="../img/genbrugs-ikon.png" />
+                    </div>
+                    <br />
+                    <div class="row flex-start">
+                        <img src="../img/svanemærke-ikon.png" />
+                        <p>Ved at donere dit gamle tøj, vil vi kunne disponere det til andre producenter, der vil få det produceret til nye produkter.
+                            De materialer vi kan bruge i vores produktion er indleveret bambus, økologisk bomuld og hør tekstiler, som vi så vil få omdannet til nye lækre tekstiler.</p>
+                    </div>
                 </div>
             </div>
         </div>

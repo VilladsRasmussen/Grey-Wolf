@@ -9,25 +9,86 @@
 </head>
 
 <body>
-
-<header class="menu-header">
-    <div class="header-icons-left">
-        <a href="https://www.elgiganten.dk/"> <!-- Menuside indsættes her -->
-            <i class="fa-solid fa-bars header-icons"></i>
-        </a>
-        <a href="index.html"> <!-- Hovedmenu indsættes her -->
-            <i class="fa-solid fa-house header-icons"></i>
-        </a>
+    <input type="checkbox" id="burger-menu-toggler" />
+    <div class="burger-menu">
+        <label id="label-close-burger-menu" for="burger-menu-toggler">
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <section class="accordion">
+            <div class="tab">
+                <input type="checkbox" id="bm-check-tab-1" />
+                <label class="tab-label" for="bm-check-tab-1"> 
+                    <h4>HERRE</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/herre-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/herre-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label" for="bm-check-tab-2"> 
+                    <h4>DAME</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <input type="checkbox" id="bm-check-tab-2" />
+                <div class="tab-content">
+                    <div class="tab-content-inner">
+                        <nav>
+                            <p><a href="produkter/dame-blazer.html">BLAZER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">BUKSER</a></p>
+                            <p><a href="produkter/dame-skjorte.html">SKJORTE</a></p>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/genbrugssystemet.html">GENBRUGSYSTEMET</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/materialer.html">MATERIALER</a></h4>
+                </label>
+            </div>
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/certificering.html">CERTIFICERING</a></h4>
+                </label>
+            </div> 
+            <div class="tab">
+                <label class="tab-label"> 
+                    <h4><a href="/login.html">LOGIN</a></h4>
+                </label>
+            </div>   
+           </section>
     </div>
-    <div class="header-icons-right">
-        <a href="https://www.elgiganten.dk/"> <!-- Profil side indsættes her -->
-            <i class="fa-solid fa-user header-icons"></i>
-        </a>
-        <a href="https://www.elgiganten.dk/"> <!-- Kurv-side indsættes her -->
-            <i class="fa-solid fa-cart-shopping header-icons"></i>
-        </a>
-    </div>
-</header>
+    <header class="menu-header">
+        <div class="header-icons-left">
+            <label for="burger-menu-toggler"> 
+                <i class="fa-solid fa-bars header-icons" id="burgermenu"></i>
+            </label>
+        </div>
+        <div class="header-icons-center">
+            <a href="index.html"> <!-- Hovedmenu indsættes her -->
+                <img src="img/Grey Wolf Logo.png" id="header-logo"/>
+            </a>
+        </div>
+        <div class="header-icons-right">
+            <a href="#"> <!-- Profil side indsættes her -->
+                <i class="fa-solid fa-user header-icons"></i>
+            </a>
+            <a href="#"> <!-- Kurv-side indsættes her -->
+                <i class="fa-solid fa-cart-shopping header-icons"></i>
+            </a>
+        </div>
+    </header>
 
 <main>
     <section id="mandlige-produkter">
