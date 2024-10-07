@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9d62a50e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Grey Wolf</title>
+</head>
+<body>
+    
+    <!--Headeren-->
+    <header class="menu-header">
+        <div class="header-icons-left">
+            <a href="https://www.elgiganten.dk/"> <!-- Menuside indsættes her -->
+                <i class="fa-solid fa-bars header-icons"></i>
+            </a>
+            <a href="index.html"> <!-- Hovedmenu indsættes her -->
+                <i class="fa-solid fa-house header-icons"></i>
+            </a>
+        </div>
+        <div class="header-icons-right">
+            <a href="https://www.elgiganten.dk/"> <!-- Profil side indsættes her -->
+                <i class="fa-solid fa-user header-icons"></i>
+            </a>
+            <a href="https://www.elgiganten.dk/"> <!-- Kurv-side indsættes her -->
+                <i class="fa-solid fa-cart-shopping header-icons"></i>
+            </a>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <div class="tab-panel">
+            <div class="labels">
+                <label for="tab-trigger-1">Klassisk<br/>Blazer</label>
+                <label for="tab-trigger-2">Køb<br/>Looket</label>
+                <label for="tab-trigger-3">Rent<br/>Praktisk</label>
+            </div>
+            <input type="radio" class="tab-trigger" name="tab" id="tab-trigger-1" checked />
+            <div class="tab">
+                <div class="tab-header-bg">
+                    <div class="active">&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                </div>
+                <div class="tab-content">
+                    <div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="brown" id="dame-blazer-brun" checked />
+                        <div class="product-img-large product-img dame-blazer-brun"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="grey" id="dame-blazer-grå" />
+                        <div class="product-img-large product-img dame-blazer-grå"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="black" id="dame-blazer-sort" />
+                        <div class="product-img-large product-img dame-blazer-sort"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="beige" id="dame-blazer-beige" />
+                        <div class="product-img-large product-img dame-blazer-beige"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="navy" id="dame-blazer-navy" />
+                        <div class="product-img-large product-img dame-blazer-navy"></div>
+                    </div>
+                    <div> 
+                        <label class="circle-small bg-brown" for="dame-blazer-brun"></label>
+                        <label class="circle-small bg-grey" for="dame-blazer-grå"></label>
+                        <label class="circle-small bg-black" for="dame-blazer-sort"></label>
+                        <label class="circle-small bg-beige" for="dame-blazer-beige"></label>
+                        <label class="circle-small bg-navy" for="dame-blazer-navy"></label>
+                    </div>
+                    <select name="" id="" class="size-selector">
+                        <option disabled selected>Vælg størrelse</option>
+                        <option>XSMALL</option>
+                        <option>SMALL</option>
+                        <option>MEDIUM</option>
+                        <option>LARGE</option>
+                        <option>XLARGE</option>
+                        <option>XXLARGE</option>
+                    </select>
+                </div>
+            </div>
+            <input type="radio" class="tab-trigger" name="tab" id="tab-trigger-2" />
+            <div class="tab">
+                <div class="tab-header-bg">
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div class="active">&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                </div>
+                <div class="tab-content">
+                    <!--Tab content goes here :D-->
+                </div>
+            </div>
+            <input type="radio" class="tab-trigger" name="tab" id="tab-trigger-3" />
+            <div class="tab">
+                <div class="tab-header-bg">
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div>&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                    <div class="active">&nbsp;<!--Just here as background, we need the &nbsp;--></div>
+                </div>
+                <div class="tab-content">
+                    <!--Tab content goes here :D-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+       <section class="accordion">
+        <div class="tab">
+            <label class="tab-label"> 
+                <h4><a href="/faq.html">FAQ</a></h4>
+            </label>
+        </div>
+        <div class="tab">
+            <label class="tab-label"> 
+                <h4><a href="/genbrugssystemet.html">Genbrugssystemet</a></h4>
+            </label>
+        </div>
+        <div class="tab">
+            <input type="checkbox" id="check-tab-1" />
+            <label class="tab-label" for="check-tab-1"> 
+                <h4>Betalingsmetoder</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </label>
+            <div class="tab-content">
+                <div class="tab-content-inner">
+                    <div id="payment-logos"> 
+                    <img src="img/Visa logo.png" alt="visa logo">
+                    <img src="img/Mastercard logo.png" alt="mastercard logo">
+                    <img src="img/dankort logo.png" alt="dankort logo">
+                    <img src="img/mobilpay logo.png" alt="mobilpay logo">
+                    <img src="img/google pay logo.png" alt="googlepay logo">
+                    <img src="img/apple pay logo.png" alt="apple pay logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <label class="tab-label" for="check-tab-2"> 
+                <h4>Vilkår og betingelser</h4>
+                <i class="fa-solid fa-chevron-down"></i>
+            </label>
+            <input type="checkbox" id="check-tab-2" />
+            <div class="tab-content">
+                <div class="tab-content-inner">
+                    <nav>
+                        <p><a href="/handelsbetingelser.html">Handelsbetingelser</a></p>
+                        <p><a href="/returneringspolitikker.html">Returneringspolitikker</a></p>
+                        <p><a href="/databeskyttelse.html">Databeskyttelse</a></p>
+                    </nav>
+                </div>
+            </div>
+       </section>
+       <section id="footer-bottom">
+        <h3>Tilmeld nyhedsbrev</h3>
+        <p>For at følge med i de seneste nyt om Grey Wolf</p>
+        <form>
+            <input type="email" id="newsletter-email" />
+        </form>
+        <h3>Kontakt os</h3>
+        <p>Email: info@greywolf.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        <p>Adresse: Havneparken 8</p>
+        <p>København 1050</p>
+        <h3>Sociale medier</h3>
+        <p id="some-logos">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </p>
+       </section>
+    </footer>
+</body>
+</html>

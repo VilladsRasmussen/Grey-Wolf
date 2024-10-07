@@ -97,11 +97,9 @@
          <section id="carusel-blazer">
             <input type="radio" class="slide-trigger" name="blazer" value="dame" id="blazer-dame" checked />
             <div id="first-slide" class="slide">
-                <label for="blazer-herre"><i class="fa-solid fa-chevron-left"></i></label>
+                <label for="blazer-herre" class="btn-previous-slide"><i class="fa-solid fa-chevron-left"></i></label>
                 <div class="slide-content">
-                    <div>
-                        <img src="img/herre-blazer-brun.png" alt="herre-blazer-brun" />
-                    </div>
+                    <!--Indsæt farvevælger husk ersat dame med herre-->
                     <select name="" id="" class="size-selector">
                         <option disabled selected>Vælg størrelse</option>
                         <option>XSMALL</option>
@@ -112,14 +110,30 @@
                         <option>XXLARGE</option>
                     </select>
                 </div>
-                <label for="blazer-herre"><i class="fa-solid fa-chevron-right"></i></label>
+                <label for="blazer-herre" class="btn-next-slide"><i class="fa-solid fa-chevron-right"></i></label>
             </div>
             <input type="radio" class="slide-trigger" name="blazer" value="herre" id="blazer-herre" />
             <div class="slide">
-                <label for="blazer-dame"><i class="fa-solid fa-chevron-left"></i></label>
+                <label for="blazer-dame" class="btn-previous-slide"><i class="fa-solid fa-chevron-left"></i></label>
                 <div class="slide-content">
                     <div>
-                        <img src="img/dame-blazer-brun.png" alt="dame-blazer-brun" />
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="brown" id="dame-blazer-brun" checked />
+                        <div class="product-img-large product-img dame-blazer-brun"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="grey" id="dame-blazer-grå" />
+                        <div class="product-img-large product-img dame-blazer-grå"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="black" id="dame-blazer-sort" />
+                        <div class="product-img-large product-img dame-blazer-sort"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="beige" id="dame-blazer-beige" />
+                        <div class="product-img-large product-img dame-blazer-beige"></div>
+                        <input type="radio" class="product-img-trigger" name="dame-blazer-color" value="navy" id="dame-blazer-navy" />
+                        <div class="product-img-large product-img dame-blazer-navy"></div>
+                    </div>
+                    <div> 
+                        <label class="circle-small bg-brown" for="dame-blazer-brun"></label>
+                        <label class="circle-small bg-grey" for="dame-blazer-grå"></label>
+                        <label class="circle-small bg-black" for="dame-blazer-sort"></label>
+                        <label class="circle-small bg-beige" for="dame-blazer-beige"></label>
+                        <label class="circle-small bg-navy" for="dame-blazer-navy"></label>
                     </div>
                     <select name="" id="" class="size-selector">
                         <option disabled selected>Vælg størrelse</option>
@@ -131,7 +145,7 @@
                         <option>XXLARGE</option>
                     </select>
                 </div>
-                <label for="blazer-dame"><i class="fa-solid fa-chevron-right"></i></label>
+                <label for="blazer-dame" class="btn-next-slide"><i class="fa-solid fa-chevron-right"></i></label>
             </div>
         </section>
         <!-- Matrialer & Certificeringer -->
