@@ -335,19 +335,19 @@ display: block;
 }
 
 .matrialer-og-certificeringer {
-    text-align: center; /* Center text inside the container */
+    text-align: center; 
   }
   
   .matrialer-content {
-    display: flex; /* Create a horizontal row */
-    justify-content: center; /* Center the columns horizontally */
-    align-items: flex-start; /* Align items at the top */
-    margin: 0 auto; /* Center the row itself */
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    margin: 0 auto; 
   }
   
   .matrialer-udvalg {
-    text-align: center; /* Center text in each column */
-    margin: 0 20px; /* Space between columns */
+    text-align: center; 
+    margin: 0 20px; 
   }
 
 #matriale-img {
@@ -372,16 +372,16 @@ display: block;
 }
 
 #fsc-gots {
-    display: flex; /*Tillader nemmere rykning med indholdet*/
-    justify-content: center; /*centrer billederne vandret*/
-    padding: 20px; /*Skaber afstand mellem tidligere sektion og næste billede*/
-    margin-right: 20px; /*Skubber billedet til højre for at centrer det lidt mere*/
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+    margin-right: 20px; 
 }
 
 #fsc-gots img {
-    margin: 5px; /*Skaber plads mellem billederne*/
-    width: 200px; /*Gør billedet lidt større*/
-    height: 200px; /*Samme formål, anderledes længde*/
+    margin: 5px; 
+    width: 200px; 
+    height: 200px; 
 }
 
 #oeko {
@@ -463,7 +463,7 @@ display: block;
     margin-top: -13px;
 }
 
-.orange-selector h3 { /*Denne og resten af de andre elementer inden footeren nedenfor er med til at rette op på text og ikoner */
+.orange-selector h3 { 
     margin-right: 35px;
     margin-bottom: -20px;
     position: relative;
@@ -651,7 +651,7 @@ nav {
 .circle-small {
     width: 22px;
     height: 22px;
-    border-radius: 50%; /* Makes it a circle */
+    border-radius: 50%; 
     display: inline-block;
 }
 
